@@ -9,6 +9,7 @@
       <!-- Material Design for Bootstrap CSS -->
       <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
       <style type="text/css">
+
          /*
          *
          * ==========================================
@@ -175,6 +176,9 @@
          .footer--bg{
          background: #212121;
          }
+         .c-list li::before{
+            display: none;
+         }
          /*image gallery section*/
          .gallery {
          -webkit-column-count: 3;
@@ -194,6 +198,12 @@
          column-width: 100%;
          }
          }
+
+                  @media (max-width: 793px) {
+                  .border-bottom-cus h1{
+                     font-size: 1.3em;
+                  }
+               }
       </style>
       <title>50 N hamilton </title>
    </head>
@@ -245,6 +255,7 @@
                   <p class="mb-4">Below are some of the property fact to help you get a quick overview.</p>
                   <ul class="list-unstyled c-list">
                      <li>
+                        <i class="far fa-building text-white"></i>
                         <p>Sale Type is for investment or owner user.</p>
                      </li>
                      <li>
@@ -276,7 +287,7 @@
             <div class="section-title  margin-x">
                <h2>Basic Information</h2>
             </div>
-            <table class="table table-bordered mt-4 pb-3">
+            <table class="table table-bordered mt-4 pb-3 table-responsive">
                <thead>
                   <tr class="bg-black text-white">
                      <th class="text-white" scope="col">Sale Type</th>
